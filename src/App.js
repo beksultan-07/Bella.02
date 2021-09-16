@@ -12,10 +12,12 @@ import ProductInfo from "./pages/ProductInfo";
 import Profile from "./pages/Profile";
 
 import "./styles/index.scss";
+import Header from "./components/Header";
 
 function App() {
   return (
     <Router>
+      <Header />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/cart" component={Cart} />

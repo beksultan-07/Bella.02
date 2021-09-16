@@ -13,7 +13,7 @@
   flex-direction: $fd;
   justify-content: $jc;
   align-items: $ai;
-  flex-wrap: $wr;
+  flex-wrap: $fw;
 }
 
 @mixin absolute($t, $r, $l, $b) {
