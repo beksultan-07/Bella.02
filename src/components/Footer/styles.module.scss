@@ -1,0 +1,44 @@
+@import "../../styles/mixins.scss";
+
+.footer {
+  background: $black;
+
+  &__lists {
+    @include flex(space-between, center, row, wrap);
+  }
+
+  &__list {
+    &__item {
+      padding: 9px 10px;
+
+      &__link {
+        @include fontz(13px, 400, $gray, 16px);
+        color: $gray;
+        text-decoration: none;
+
+        &__active {
+          color: $brown2;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__info {
+    @include flex(space-between, center, row, wrap);
+
+    &__title {
+      @include fontz(14px, 400, $gray, 18px);
+      font-family: "Mulish", sans-serif;
+      margin: 47px 0 43px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer__lists {
+    @include grid(2, 2, 0);
+    text-align: center;
+  }
+}

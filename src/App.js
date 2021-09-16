@@ -13,6 +13,7 @@ import Profile from "./pages/Profile";
 
 import "./styles/index.scss";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -28,8 +29,9 @@ function App() {
         <Route path="/newsInfo" component={NewsInfo} />
         <Route path="/productInfo" component={ProductInfo} />
         <Route path="/profile" component={Profile} />
-        <Route path="*" component={ErrorPage} />
+        <Route path="/*" component={ErrorPage} />
       </Switch>
+      <Footer />
     </Router>
   );
 }

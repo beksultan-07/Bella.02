@@ -1,6 +1,7 @@
 @import "fonts.scss";
+@import "variables.scss";
 
-@mixin fontz($fz, $fc, $fw, $lh) {
+@mixin fontz($fz, $fw, $fc, $lh) {
   font-family: HelveticaNeueCyr;
   font-size: $fz;
   font-weight: $fw;
@@ -10,10 +11,18 @@
 
 @mixin flex($jc, $ai, $fd, $fw) {
   display: flex;
-  flex-direction: $fd;
   justify-content: $jc;
   align-items: $ai;
   flex-wrap: $fw;
+  flex-direction: $fd;
+  flex-wrap: $fw;
+}
+
+@mixin grid($c, $r, $g) {
+  display: grid;
+  grid-template-columns: repeat($c, 1fr);
+  grid-template-rows: repeat($r, 1fr);
+  gap: $g;
 }
 
 @mixin absolute($t, $r, $l, $b) {
