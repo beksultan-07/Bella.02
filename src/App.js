@@ -10,6 +10,7 @@ import News from "./pages/News";
 import NewsInfo from "./pages/NewsInfo";
 import ProductInfo from "./pages/ProductInfo";
 import Profile from "./pages/Profile";
+import AboutUs from "./pages/AboutUs";
 
 import "./styles/index.scss";
 import Header from "./components/Header";
@@ -30,6 +31,8 @@ function App() {
         <Route path="/productInfo" component={ProductInfo} />
         <Route path="/profile" component={Profile} />
         <Route path="/*" component={ErrorPage} />
+        <Route path="/aboutUs" component={AboutUs} />
+        <Route path="*" component={ErrorPage} />
       </Switch>
       <Footer />
     </Router>
