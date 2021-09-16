@@ -1,0 +1,9 @@
+@import '../../styles//variables.scss';
+@import '../../styles/mixins.scss';
+
+.ffff {
+    @include fontz(20px, $red, 700, 13px);
+    .dd{
+        @include fontz(40px, $brown, 400, 15px);
+    }
+}

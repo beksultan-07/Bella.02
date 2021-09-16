@@ -1,6 +1,7 @@
 @import "fonts.scss";
+@import 'variables.scss';
 
-@mixin fontz($fz, $fc, $fw, $lh) {
+@mixin fontz($fz, $fw, $fc, $lh) {
   font-family: HelveticaNeueCyr;
   font-size: $fz;
   font-weight: $fw;
@@ -10,10 +11,10 @@
 
 @mixin flex($jc, $ai, $fd, $fw) {
   display: flex;
-  flex-direction: $fd;
   justify-content: $jc;
   align-items: $ai;
-  flex-wrap: $wr;
+  flex-direction: $fd;
+  flex-wrap: $fw;
 }
 
 @mixin absolute($t, $r, $l, $b) {
