@@ -11,6 +11,8 @@ import NewsInfo from "./pages/NewsInfo";
 import ProductInfo from "./pages/ProductInfo";
 import Profile from "./pages/Profile";
 
+import "./styles/index.scss";
+
 function App() {
   return (
     <Router>

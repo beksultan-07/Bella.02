@@ -1,0 +1,25 @@
+@import "fonts.scss";
+
+@mixin fontz($fz, $fc, $fw, $lh) {
+  font-family: HelveticaNeueCyr;
+  font-size: $fz;
+  font-weight: $fw;
+  color: $fc;
+  line-height: $lh;
+}
+
+@mixin flex($jc, $ai, $fd, $fw) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-wrap: $wr;
+}
+
+@mixin absolute($t, $r, $l, $b) {
+  position: absolute;
+  top: $t;
+  right: $r;
+  left: $l;
+  bottom: $b;
+}
