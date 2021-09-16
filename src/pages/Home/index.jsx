@@ -1,7 +1,9 @@
+import './styles.module.scss'
+// import {}
 
 export default function Home() {
     return (
-        <div>
+        <div >
             Home
         </div>
     )
