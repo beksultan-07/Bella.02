@@ -17,6 +17,13 @@
   flex-wrap: $fw;
 }
 
+@mixin grid($c, $r, $g) {
+  display: grid;
+  grid-template-columns: repeat($c, 1fr);
+  grid-template-rows: repeat($r, 1fr);
+  gap: $g;
+}
+
 @mixin absolute($t, $r, $l, $b) {
   position: absolute;
   top: $t;
@@ -24,3 +31,14 @@
   left: $l;
   bottom: $b;
 }
+
+
+// @mixin media($minmax, $media) {
+//   @each $size, $resolution in $sizes {
+//     @if $media == $size {
+//       @media only screen and (#{$minmax}-width: $resolution) {
+//         @content;
+//       }
+//     }
+//   }
+// }
