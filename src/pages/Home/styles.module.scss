@@ -1,6 +1,12 @@
 @import "../../styles//variables.scss";
 @import "../../styles/mixins.scss";
 
-.headerText {
-  color: red;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.categories {
+  background-color: #fff3e3;
+  height: 540px;
 }

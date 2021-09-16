@@ -1,0 +1,42 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.hero {
+  width: 100%;
+  position: relative;
+
+  &__title {
+    max-width: 658px;
+    font-family: "Cormorant";
+    font-weight: normal;
+    font-size: 64px;
+    margin: 0;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+
+  &__btn {
+    @include fontz(14px, #fff, 400, 13px);
+    background-color: #ab844a;
+    padding: 15px 93px;
+    margin-bottom: 10%;
+
+    code {
+      margin-left: 8px;
+    }
+  }
+
+  .heroImgWrap {
+    position: relative;
+  }
+
+  .heroImg {
+    width: 100%;
+  }
+
+  .heroInfo {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+}
