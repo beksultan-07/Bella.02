@@ -4,6 +4,7 @@
     background: $black;
 
     &__lists{
+        padding: 40px 0 0;
         @include flex(space-between, center, row, wrap);
     }
 
