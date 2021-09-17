@@ -1,0 +1,50 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.delivery {
+  margin-bottom: 60px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  &__nav {
+    width: 185px;
+    padding-top: 50px;
+
+    &__item {
+      @include fontz(14px, 400, #7c7c7c, 14px);
+      margin-bottom: 25px;
+      cursor: pointer;
+
+      &__active {
+        color: $brown;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  &__desc {
+    width: 815px;
+
+    h2 {
+      @include fontz(24px, 400, $black, 24px);
+      margin-bottom: 20px;
+    }
+
+    p {
+      @include fontz(15px, 400, #7c7c7c, 26px);
+
+      &:nth-child(3) {
+        margin-top: 15px;
+      }
+    }
+  }
+}
