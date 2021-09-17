@@ -1,0 +1,238 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.products {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__wrap {
+    display: flex;
+  }
+
+  &__list {
+    @include flex(space-between, normal, row, wrap);
+
+    &__item {
+      transition: $transition;
+      border: none;
+      margin-bottom: 35px;
+      overflow: hidden;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+
+        .add_to_cart {
+          display: block;
+          bottom: 25px;
+        }
+      }
+
+      &__img {
+        position: relative;
+        width: 250px;
+        height: 350px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        span {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+        }
+      }
+
+      &__desc {
+        display: flex;
+        flex-direction: column;
+
+        .price {
+          display: flex;
+          margin-top: 10px;
+          margin-bottom: 10px;
+
+          &__info {
+            display: flex;
+            justify-content: space-between;
+          }
+
+          &__old,
+          &__curr {
+            margin-top: 0px;
+            margin-bottom: 0;
+          }
+
+          &__old {
+            @include fontz(16px, 400, #7c7c7c7c, 16px);
+            margin-right: 12px;
+            text-decoration: line-through;
+          }
+
+          &__curr {
+            @include fontz(16px, 700, #ab844a, 16px);
+          }
+        }
+
+        .size {
+          @include fontz(14px, 400, #7c7c7c, 14px);
+          margin-top: 0;
+          margin-bottom: 18px;
+        }
+      }
+
+      &__name {
+        @include fontz(15px, 500, #000, 15px);
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    .heart__icon {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 3px 5px;
+      border-radius: 50px;
+      background-color: #fff;
+      transition: $transition;
+
+      svg {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+
+      &:hover {
+        background-color: #000;
+
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .add_to_cart {
+    width: 235px;
+    height: 45px;
+    padding: 15px 0px;
+    position: absolute;
+    bottom: -50%;
+    right: 8px;
+    background-color: #fff;
+    display: none;
+
+    p {
+      @include fontz(14px, 400, #000, 14px);
+      @include flex(center, center, row, nowrap);
+      margin: 0;
+    }
+
+    span {
+      margin-right: 8px;
+    }
+  }
+
+  .discount {
+    padding: 5px 10px;
+    text-align: center;
+    background-color: #ff6565;
+    color: #fff;
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+  }
+
+  &_left_side {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+  }
+
+  &_right_side {
+    width: 80%;
+  }
+
+  &_right__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &_right__title {
+    font-family: HelveticaNeueCyr;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .category_title {
+    font-family: HelveticaNeueCyr;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 75px;
+    margin-bottom: 25px;
+  }
+
+  .category__list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+
+    &__item {
+      @include fontz(14px, 400, #000, 14px);
+      cursor: pointer;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      code {
+        margin-left: auto;
+        margin-right: 20px;
+        color: $brown;
+      }
+
+      &__active {
+        color: #2b2a2a;
+        font-weight: bold;
+      }
+
+      .category__list {
+        padding-left: 15px;
+
+        li {
+          margin-bottom: 20px;
+
+          div {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+
+        &_child {
+          padding-left: 15px;
+          margin-top: 20px;
+        }
+      }
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.hide {
+  display: none;
+}

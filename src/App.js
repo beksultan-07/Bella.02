@@ -15,6 +15,7 @@ import AboutUs from "./pages/AboutUs";
 import "./styles/index.scss";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Products from "./pages/Products";
 
 function App() {
   return (
@@ -28,11 +29,11 @@ function App() {
         <Route path="/favorites" component={Favorites} />
         <Route path="/news" component={News} />
         <Route path="/newsInfo" component={NewsInfo} />
+        <Route path="/products" component={Products} />
         <Route path="/productInfo" component={ProductInfo} />
         <Route path="/profile" component={Profile} />
         <Route path="/*" component={ErrorPage} />
         <Route path="/aboutUs" component={AboutUs} />
-        <Route path="*" component={ErrorPage} />
       </Switch>
       <Footer />
     </Router>
