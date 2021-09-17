@@ -10,3 +10,52 @@
   background-color: #fff3e3;
   height: 540px;
 }
+
+.bestsellers {
+  margin-bottom: 60px;
+
+  &__title {
+    @include fontz($fz32, 400, #000, $fz32);
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 35px;
+  }
+}
+
+.new {
+  margin-bottom: 60px;
+
+  &__title {
+    @include fontz($fz32, 400, #000, $fz32);
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 35px;
+  }
+}
+
+.collections {
+  margin-bottom: 60px;
+  background-color: #f6fdff;
+  padding-top: 70px;
+
+  &__title {
+    @include fontz($fz32, 400, #000, $fz32);
+    text-align: center;
+  }
+}
+
+.view__all {
+  padding: 15px 0px;
+  width: 250px;
+  background-color: $black;
+  text-align: center;
+  @include fontz(14px, 400, $white, 14px);
+  font-family: HelveticaNeueCyr;
+  margin: 0 auto;
+  margin-top: 45px;
+
+  span {
+    margin-left: 12px;
+    color: $brown;
+  }
+}

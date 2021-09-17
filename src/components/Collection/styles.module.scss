@@ -27,6 +27,11 @@
     background-color: #2b2a2a;
     padding: 15px 0px;
     margin: 0;
-    @include fontz($fz14, #fff, 400, $fz14);
+    @include fontz($fz14, 400, #fff, $fz14);
+
+    code {
+      color: $brown;
+      margin-left: 12px;
+    }
   }
 }

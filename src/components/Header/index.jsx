@@ -7,10 +7,13 @@ import heart from "../../assets/heart.svg";
 import search from "../../assets/search.svg";
 import user from "../../assets/user.svg";
 import bella from "../../assets/bella.svg";
+import close from "../../assets/close.svg";
+import CartModal from "../CartModal";
 
 export default function Header() {
   const [userModal, setUserModal] = useState(false);
   const [searchModal, setSearchModal] = useState(false);
+  const [cartModal, setCartModal] = useState(false);
 
   const openSearchModal = () => {
     setSearchModal(true);
@@ -22,6 +25,10 @@ export default function Header() {
 
   const toggleUserModal = () => {
     setUserModal(!userModal);
+  };
+
+  const toggleCartModal = () => {
+    setCartModal(!cartModal);
   };
 
   return (
@@ -70,7 +77,7 @@ export default function Header() {
                 <img src={user} alt="" />
               </span>
               Профиль
-              {/* <ul className={styles.userList}>
+              <ul className={`${styles.userList} ${!userModal ? "hide" : ""}`}>
                 <li>
                   <Link to="/cart">Мои заказы</Link>
                 </li>
@@ -80,10 +87,10 @@ export default function Header() {
                 <li>
                   <Link to="/">Выйти</Link>
                 </li>
-              </ul> */}
+              </ul>
             </a>
           </li>
-          <li>
+          <li onClick={toggleCartModal}>
             <a>
               <span>
                 <img src={cart} alt="" />
@@ -92,7 +99,16 @@ export default function Header() {
             </a>
           </li>
         </ul>
+        <div
+          className={`${styles.search__block} ${!searchModal ? "hide" : ""}`}
+        >
+          <div className={styles.search}>
+            <input type="text" placeholder="Искать" />
+            <img src={close} alt="" onClick={closeSearchModal} />
+          </div>
+        </div>
       </div>
+      <CartModal cartModal={cartModal} toggleCartModal={toggleCartModal} />
     </header>
   );
 }

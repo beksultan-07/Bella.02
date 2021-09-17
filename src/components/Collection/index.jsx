@@ -1,12 +1,12 @@
 import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
 
-import collection1 from "../../assets/collection/collection1.png";
-import collection2 from "../../assets/collection/collection2.png";
-import collection3 from "../../assets/collection/collection3.png";
-import collection4 from "../../assets/collection/collection4.png";
-
-export default function Collection() {
+export default function Collection({
+  collection1,
+  collection2,
+  collection3,
+  collection4,
+}) {
   return (
     <div className={styles.collections__list}>
       <Link to="/collections" className={styles.collections__list__item}>
