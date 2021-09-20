@@ -38,7 +38,7 @@ export default function Header() {
           <Link to="/products" className={styles.header__navItem}>
             Товары
           </Link>
-          <Link to="/aboutus" className={styles.header__navItem}>
+          <Link to="/about" className={styles.header__navItem}>
             О нас
           </Link>
           <Link to="/news" className={styles.header__navItem}>
@@ -47,7 +47,7 @@ export default function Header() {
           <Link to="/delivery" className={styles.header__navItem}>
             Доставка
           </Link>
-          <Link to="/contacts" className={styles.header__navItem}>
+          <Link to="/delivery" className={styles.header__navItem}>
             Контакты
           </Link>
         </nav>

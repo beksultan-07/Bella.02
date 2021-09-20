@@ -1,12 +1,20 @@
 @import "../../styles//mixins.scss";
 @import "../../styles/variables.scss";
 
-.collections__list {
-  display: flex;
-  justify-content: space-between;
-  padding: 60px 0px;
+.collections__list__item {
+  margin-bottom: 30px;
 
-  &__item__body {
+  &:hover {
+    .collections__list__item__bottom {
+      background-color: #ab844a;
+
+      code {
+        color: #2b2a2a;
+      }
+    }
+  }
+
+  &__body {
     position: relative;
     height: 375px;
 
@@ -22,12 +30,13 @@
     }
   }
 
-  &__item__bottom {
+  &__bottom {
     text-align: center;
     background-color: #2b2a2a;
     padding: 15px 0px;
     margin: 0;
     @include fontz($fz14, 400, #fff, $fz14);
+    transition: all 0.5s;
 
     code {
       color: $brown;

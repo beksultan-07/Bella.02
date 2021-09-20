@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import Collection from "../../components/Collection";
+import CollectionItem from "../../components/CollectionItem";
 import Hero from "../../components/Hero";
 import Products from "../../components/Products";
 
@@ -14,7 +14,13 @@ import collection1 from "../../assets/collections/collection1.png";
 import collection2 from "../../assets/collections/collection2.png";
 import collection3 from "../../assets/collections/collection3.png";
 import collection4 from "../../assets/collections/collection4.png";
-import News from "../../components/News";
+
+import news1 from "../../assets/news/news1.png";
+import news2 from "../../assets/news/news2.png";
+import news3 from "../../assets/news/news3.png";
+import news4 from "../../assets/news/news4.png";
+
+import NewsItem from "../../components/NewsItem";
 import Benefits from "../../components/Benefits";
 import Subscribe from "../../components/Subscribe";
 
@@ -24,12 +30,12 @@ export default function Home() {
       <Hero />
       <div className={styles.categories}>
         <div className={styles.container}>
-          <Collection
-            collection1={categories1}
-            collection2={categories2}
-            collection3={categories3}
-            collection4={categories4}
-          />
+          <div className={styles.categories__list}>
+            <CollectionItem collectionImg={categories1} />
+            <CollectionItem collectionImg={categories2} />
+            <CollectionItem collectionImg={categories3} />
+            <CollectionItem collectionImg={categories4} />
+          </div>
         </div>
       </div>
       <div className={styles.bestsellers}>
@@ -53,17 +59,27 @@ export default function Home() {
       <div className={styles.collections}>
         <div className={styles.container}>
           <h2 className={styles.collections__title}>Коллекция</h2>
-          <Collection
-            collection1={collection1}
-            collection2={collection2}
-            collection3={collection3}
-            collection4={collection4}
-          />
+          <div className={styles.collections__list}>
+            <CollectionItem collectionImg={collection1} />
+            <CollectionItem collectionImg={collection2} />
+            <CollectionItem collectionImg={collection3} />
+            <CollectionItem collectionImg={collection4} />
+          </div>
         </div>
       </div>
       <Subscribe />
       <Benefits />
-      <News />
+      <div className={styles.news}>
+        <div className={styles.container}>
+          <h3 className={styles.news__title}>Новости</h3>
+          <div className={styles.news__list}>
+            <NewsItem newsImg={news1} />
+            <NewsItem newsImg={news2} />
+            <NewsItem newsImg={news3} />
+            <NewsItem newsImg={news4} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

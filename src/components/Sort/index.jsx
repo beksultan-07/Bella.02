@@ -2,6 +2,8 @@ import { useState } from "react";
 import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
 
+import down from "../../assets/arrow-down.svg";
+
 export default function Sort() {
   const [sort, setSort] = useState("sort__list");
   const [sortState, setSortState] = useState(false);
@@ -18,7 +20,10 @@ export default function Sort() {
   return (
     <div className={styles.sort}>
       <p className={styles.sort_title} onClick={clickSort}>
-        Сортировать по <code>&or;</code>
+        Сортировать по{" "}
+        <code>
+          <img src={down} />
+        </code>
       </p>
       <ul className={`${styles.sort_list} ${!sortState ? "hide" : ""}`}>
         <li>

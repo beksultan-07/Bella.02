@@ -24,7 +24,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/cart" component={Cart} />
-        <Route path="/collection" component={Collection} />
+        <Route path="/collections" component={Collection} />
         <Route path="/delivery" component={Delivery} />
         <Route path="/favorites" component={Favorites} />
         <Route path="/news" component={News} />
@@ -32,8 +32,8 @@ function App() {
         <Route path="/products" component={Products} />
         <Route path="/productInfo" component={ProductInfo} />
         <Route path="/profile" component={Profile} />
+        <Route path="/about" component={AboutUs} />
         <Route path="/*" component={ErrorPage} />
-        <Route path="/aboutUs" component={AboutUs} />
       </Switch>
       <Footer />
     </Router>

@@ -1,0 +1,60 @@
+.aboutUs {
+  margin-bottom: 60px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    padding: 35px 100px;
+    background: #fff;
+  }
+
+  &_title_text {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+  }
+
+  &_text {
+    color: #7c7c7c;
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 28px;
+    background: #fff;
+    max-width: 380px;
+    margin-top: 60px;
+  }
+
+  &__title {
+    font-family: HelveticaNeueCyr;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+.wrap_title_img {
+  position: relative;
+}
+
+.img_text {
+  margin-top: 40px;
+}
+
+.img_text__text {
+  font-family: HelveticaNeueCyr;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 30px;
+
+  max-width: 350px;
+  max-height: 416px;
+}

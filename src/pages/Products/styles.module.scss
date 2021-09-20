@@ -39,12 +39,12 @@
           width: 100%;
           height: 100%;
         }
+      }
 
-        span {
-          position: absolute;
-          top: 0px;
-          left: 0px;
-        }
+      .products__list__item__img > span {
+        position: absolute;
+        top: 0px;
+        left: 0px;
       }
 
       &__desc {

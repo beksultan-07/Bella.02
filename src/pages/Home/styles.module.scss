@@ -9,6 +9,12 @@
 .categories {
   background-color: #fff3e3;
   height: 540px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0px;
+  }
 }
 
 .bestsellers {
@@ -33,14 +39,45 @@
   }
 }
 
-.collections {
+.news {
   margin-bottom: 60px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.collections {
   background-color: #f6fdff;
-  padding-top: 70px;
+  padding: 70px 0px;
 
   &__title {
     @include fontz($fz32, 400, #000, $fz32);
     text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 

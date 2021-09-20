@@ -6,8 +6,9 @@ import product2 from "../../assets/products/product2.png";
 import product3 from "../../assets/products/product3.png";
 import product4 from "../../assets/products/product4.png";
 
-import cart from "../../assets/cart.svg";
+import cart from "../../assets/cart-gold.svg";
 import Sort from "../../components/Sort";
+import down from "../../assets/arrow-down.svg";
 
 const productsArr = [
   {
@@ -95,7 +96,7 @@ const productsArr = [
 
 export default function Products() {
   const toggleList = (e) => {
-    let $list = e.target.parentElement.parentElement.children[1];
+    let $list = e.target.parentElement.parentElement.parentElement.children[1];
     if ($list.classList.contains("hide")) {
       $list.classList.remove("hide");
     } else {
@@ -117,7 +118,9 @@ export default function Products() {
                 <li className={styles.category__list__item}>
                   <div>
                     Верхняя одежда
-                    <code onClick={(e) => toggleList(e)}>&or;</code>
+                    <code>
+                      <img src={down} onClick={(e) => toggleList(e)} />
+                    </code>
                   </div>
                   <ul className={`${styles.category__list} hide`}>
                     <li>Верхняя одежда</li>
@@ -125,7 +128,9 @@ export default function Products() {
                     <li>
                       <div>
                         Верхняя одежда{" "}
-                        <code onClick={(e) => toggleList(e)}>&or;</code>
+                        <code>
+                          <img src={down} onClick={(e) => toggleList(e)} />
+                        </code>
                       </div>
 
                       <ul className={`${styles.category__list_child} hide`}>
@@ -137,7 +142,10 @@ export default function Products() {
                 </li>
                 <li className={styles.category__list__item}>
                   <div>
-                    Платья <code onClick={(e) => toggleList(e)}>&or;</code>
+                    Платья{" "}
+                    <code>
+                      <img src={down} onClick={(e) => toggleList(e)} />
+                    </code>
                   </div>
 
                   <ul className={`${styles.category__list} hide`}>
@@ -146,7 +154,9 @@ export default function Products() {
                     <li>
                       <div>
                         Верхняя одежда{" "}
-                        <code onClick={(e) => toggleList(e)}>&or;</code>
+                        <code>
+                          <img src={down} onClick={(e) => toggleList(e)} />
+                        </code>
                       </div>
 
                       <ul className={`${styles.category__list_child} hide`}>
@@ -158,7 +168,10 @@ export default function Products() {
                 </li>
                 <li className={styles.category__list__item}>
                   <div>
-                    Туники <code onClick={(e) => toggleList(e)}>&or;</code>
+                    Туники{" "}
+                    <code>
+                      <img src={down} onClick={(e) => toggleList(e)} />
+                    </code>
                   </div>
 
                   <ul className={`${styles.category__list} hide`}>
@@ -167,7 +180,9 @@ export default function Products() {
                     <li>
                       <div>
                         Верхняя одежда{" "}
-                        <code onClick={(e) => toggleList(e)}>&or;</code>
+                        <code>
+                          <img src={down} onClick={(e) => toggleList(e)} />
+                        </code>
                       </div>
 
                       <ul className={`${styles.category__list_child} hide`}>
@@ -180,7 +195,9 @@ export default function Products() {
                 <li className={styles.category__list__item}>
                   <div>
                     Футболки
-                    <code onClick={(e) => toggleList(e)}>&or;</code>
+                    <code>
+                      <img src={down} onClick={(e) => toggleList(e)} />
+                    </code>
                   </div>
 
                   <ul className={`${styles.category__list} hide`}>
@@ -189,7 +206,9 @@ export default function Products() {
                     <li>
                       <div>
                         Верхняя одежда{" "}
-                        <code onClick={(e) => toggleList(e)}>&or;</code>
+                        <code>
+                          <img src={down} onClick={(e) => toggleList(e)} />
+                        </code>
                       </div>
 
                       <ul className={`${styles.category__list_child} hide`}>
@@ -201,7 +220,10 @@ export default function Products() {
                 </li>
                 <li className={styles.category__list__item}>
                   <div>
-                    Шорты <code onClick={(e) => toggleList(e)}>&or;</code>
+                    Шорты{" "}
+                    <code>
+                      <img src={down} onClick={(e) => toggleList(e)} />
+                    </code>
                   </div>
 
                   <ul className={`${styles.category__list} hide`}>
@@ -210,7 +232,9 @@ export default function Products() {
                     <li>
                       <div>
                         Верхняя одежда{" "}
-                        <code onClick={(e) => toggleList(e)}>&or;</code>
+                        <code>
+                          <img src={down} onClick={(e) => toggleList(e)} />
+                        </code>
                       </div>
 
                       <ul className={`${styles.category__list_child} hide`}>
@@ -223,7 +247,9 @@ export default function Products() {
                 <li className={styles.category__list__item}>
                   <div>
                     Юбки
-                    <code onClick={(e) => toggleList(e)}>&or;</code>
+                    <code>
+                      <img src={down} onClick={(e) => toggleList(e)} />
+                    </code>
                   </div>
 
                   <ul className={`${styles.category__list} hide`}>
@@ -232,7 +258,9 @@ export default function Products() {
                     <li>
                       <div>
                         Верхняя одежда{" "}
-                        <code onClick={(e) => toggleList(e)}>&or;</code>
+                        <code>
+                          <img src={down} onClick={(e) => toggleList(e)} />
+                        </code>
                       </div>
 
                       <ul className={`${styles.category__list_child} hide`}>
@@ -245,7 +273,9 @@ export default function Products() {
                 <li className={styles.category__list__item}>
                   <div>
                     Вечерние платья
-                    <code onClick={(e) => toggleList(e)}>&or;</code>
+                    <code>
+                      <img src={down} onClick={(e) => toggleList(e)} />
+                    </code>
                   </div>
 
                   <ul className={`${styles.category__list} hide`}>
@@ -254,7 +284,9 @@ export default function Products() {
                     <li>
                       <div>
                         Верхняя одежда{" "}
-                        <code onClick={(e) => toggleList(e)}>&or;</code>
+                        <code>
+                          <img src={down} onClick={(e) => toggleList(e)} />
+                        </code>
                       </div>
 
                       <ul className={`${styles.category__list_child} hide`}>
@@ -267,7 +299,9 @@ export default function Products() {
                 <li className={styles.category__list__item}>
                   <div>
                     Пижамы
-                    <code onClick={(e) => toggleList(e)}>&or;</code>
+                    <code>
+                      <img src={down} onClick={(e) => toggleList(e)} />
+                    </code>
                   </div>
 
                   <ul className={`${styles.category__list} hide`}>
@@ -276,7 +310,9 @@ export default function Products() {
                     <li>
                       <div>
                         Верхняя одежда{" "}
-                        <code onClick={(e) => toggleList(e)}>&or;</code>
+                        <code>
+                          <img src={down} onClick={(e) => toggleList(e)} />
+                        </code>
                       </div>
 
                       <ul className={`${styles.category__list_child} hide`}>

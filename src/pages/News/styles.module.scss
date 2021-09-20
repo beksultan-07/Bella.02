@@ -1,0 +1,22 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.news {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @include fontz($fz32, 400, #000, $fz32);
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

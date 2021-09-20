@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
   }
 
   &__img {
@@ -19,6 +20,7 @@
   &__block {
     display: flex;
     flex-direction: column;
+    width: 500px;
 
     &__title {
       font-family: HelveticaNeueCyr;

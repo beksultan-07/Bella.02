@@ -1,0 +1,37 @@
+.error_page {
+  text-align: center;
+  margin-bottom: 140px;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_btn {
+    width: 415px;
+    padding: 38px 0px;
+
+    a {
+      font-family: "HelveticaNeueCyr";
+      font-size: 2rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-align: center;
+    }
+
+    background: #ab844a;
+    outline: none;
+    border: none;
+    margin: 50px auto;
+  }
+
+  img {
+    width: 760px;
+    height: 515px;
+  }
+}
