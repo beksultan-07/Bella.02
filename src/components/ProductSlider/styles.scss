@@ -1,0 +1,30 @@
+.productSwiper {
+  margin-right: 20px;
+}
+
+.productSwiper__img {
+  width: 100px;
+  object-fit: cover;
+}
+
+.product-img-wrap {
+  position: relative;
+  cursor: pointer;
+}
+
+.product__img-shell {
+  position: absolute;
+  background: rgba(167, 167, 167, 0.623);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.product__img-shell-active {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}

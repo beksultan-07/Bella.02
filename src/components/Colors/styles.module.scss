@@ -1,0 +1,47 @@
+.color_choose {
+  &_color {
+    padding: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    width: 8px;
+    height: 8px;
+
+    &_wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2px;
+      margin: 0 5px;
+    }
+  }
+}
+
+.all_colors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue {
+  background: #bdd4d1;
+}
+
+.green {
+  background: #c5e7ab;
+}
+.brown {
+  background: #ab844a;
+}
+.white {
+  background: #fff;
+  border: 1px solid #e9e9e9;
+}
+.grey {
+  background: #909091;
+}
+.pink {
+  background: #ff8787;
+}

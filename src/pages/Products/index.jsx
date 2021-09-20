@@ -99,8 +99,10 @@ export default function Products() {
     let $list = e.target.parentElement.parentElement.parentElement.children[1];
     if ($list.classList.contains("hide")) {
       $list.classList.remove("hide");
+      $list.parentElement.children[0].style.color = "#AB844A";
     } else {
       $list.classList.add("hide");
+      $list.parentElement.children[0].style.color = "#2b2a2a";
     }
   };
 
@@ -115,7 +117,7 @@ export default function Products() {
             <div className={styles.category}>
               <h3 className={styles.category_title}>Категория </h3>
               <ul className={styles.category__list}>
-                <li className={styles.category__list__item}>
+                <li className={`${styles.category__list__item}`}>
                   <div>
                     Верхняя одежда
                     <code>
