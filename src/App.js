@@ -22,18 +22,18 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/cart" component={Cart} />
-        <Route path="/collections" component={Collection} />
-        <Route path="/delivery" component={Delivery} />
-        <Route path="/favorites" component={Favorites} />
-        <Route path="/news" component={News} />
-        <Route path="/newsInfo" component={NewsInfo} />
-        <Route path="/products" component={Products} />
-        <Route path="/productInfo" component={ProductInfo} />
-        <Route path="/profile" component={Profile} />
-        <Route path="/about" component={AboutUs} />
-        <Route path="/*" component={ErrorPage} />
+        <Route path='/' exact component={Home} />
+        <Route path='/cart' component={Cart} />
+        <Route path='/collections' component={Collection} />
+        <Route path='/delivery' component={Delivery} />
+        <Route path='/favorites' component={Favorites} />
+        <Route path='/news' component={News} />
+        <Route path='/newsInfo' component={NewsInfo} />
+        <Route path='/products' component={Products} />
+        <Route path='/productInfo' component={ProductInfo} />
+        <Route path='/profile' component={Profile} />
+        <Route path='/about' component={AboutUs} />
+        <Route path='/*' component={ErrorPage} />
       </Switch>
       <Footer />
     </Router>
